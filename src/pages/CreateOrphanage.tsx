@@ -18,6 +18,7 @@ export default function CreateOrphanage() {
   const [name, setName] = useState('');
   const [about, setAbout] = useState('');
   const [instructions, setInstructions] = useState('');
+  const [whatsapp, setWhatsapp] = useState('');
   const [opening_hours, setOpeningHours] = useState('');
   const [open_on_weekends, setOpenOnWeekends] = useState(true);
   const [images, setImages] = useState<File[]>([]);
@@ -57,6 +58,7 @@ export default function CreateOrphanage() {
     data.append('latitude', String(latitude));
     data.append('longitude', String(longitude));
     data.append('instructions', instructions);
+    data.append('whatsapp', whatsapp);
     data.append('opening_hours', opening_hours);
     data.append('open_on_weekends', String(open_on_weekends));
 
@@ -148,6 +150,15 @@ export default function CreateOrphanage() {
             </div>
 
             <div className="input-block">
+              <label htmlFor="whatsapp">Whatsapp (somente números)</label>
+              <input
+                id="whatsapp"
+                value={whatsapp}
+                onChange={e => setWhatsapp(e.target.value)}
+              />
+            </div>
+
+            <div className="input-block">
               <label htmlFor="opening_hours">Horário de funcionamento</label>
               <input
                 id="opening_hours"
@@ -186,5 +197,3 @@ export default function CreateOrphanage() {
     </div>
   );
 }
-
-// return `https://a.tile.openstreetmap.org/${z}/${x}/${y}.png`;
