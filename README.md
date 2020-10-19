@@ -21,8 +21,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O Happy é uma aplicação que conecta pessoas à casas de acolhimento institucional para fazer o dia de muitas crianças mais feliz.<br />
 Esse projeto foi desenvolvido durante a Next Level Week #3 da RocketSeat.
 
-- [Repositório do aplicação mobile](https://github.com/daniloamsilva/happy_mobile)
-- [Repositório do backend](https://github.com/daniloamsilva/happy_backend)
+- [Repositório da Aplicação Mobile](https://github.com/daniloamsilva/happy_mobile)
+- [Repositório do Backend](https://github.com/daniloamsilva/happy_backend)
 
 ## 🔖 Layout
 
